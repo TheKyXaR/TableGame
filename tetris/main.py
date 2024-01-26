@@ -113,6 +113,7 @@ def main () :  # це типу початок роботи (ага на заво
 	all_blocks = []
 	fall_figure = figure(4, 0, randint(1, 7), 1, all_blocks)
 	fall_figure.create_form("create")
+	os.system(f"mode con lines=22 cols=21")
 
 	fps = time.time()
 	fall_figure_time = time.time()
@@ -132,7 +133,7 @@ def main () :  # це типу початок роботи (ага на заво
 			lines = check_lines(fall_figure.all_blocks)
 
 			fall_figure.all_blocks = lines[0]
-			all_blocks = fall_figure.all_blocksS
+			all_blocks = fall_figure.all_blocks
 			if lines[1] == 1 : score += 100
 			elif lines[1] == 2 : score += 200
 			elif lines[1] == 3 : score += 700
