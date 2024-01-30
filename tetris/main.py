@@ -121,7 +121,7 @@ def main () :
 	keyboard.add_hotkey('up', lambda: fall_figure.rotate())
 
 	while True : 
-		if keyboard.is_pressed('down') : fall_figure_time_plus = 0.1  # якщо кнопка в низ блять іди нахуй довго пояснювати
+		if keyboard.is_pressed('down') : fall_figure_time_plus = 0.1
 		else : fall_figure_time_plus = 0.5
 
 		if time.time() >= fps + 0.2 : 
